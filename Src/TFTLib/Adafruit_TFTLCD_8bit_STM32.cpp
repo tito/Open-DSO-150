@@ -285,7 +285,7 @@ void setRotation(uint8_t x)
    switch (x)
    {
    case 2:
-     t = ILI9341_MADCTL_MX | ILI9341_MADCTL_BGR;
+     t = ILI9341_MADCTL_MX | ILI9341_MADCTL_MH | ILI9341_MADCTL_BGR;
      break;
    case 3:
      t = ILI9341_MADCTL_MV | ILI9341_MADCTL_BGR;

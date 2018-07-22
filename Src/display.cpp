@@ -1069,7 +1069,8 @@ void initDisplay()
   //datasheet an ILI9325 IT IS ACTUALLY A ILI9341
   tft_begin();
 
-  tft_setRotation(LANDSCAPE);
+  // tft_setRotation(LANDSCAPE);
+  tft_setRotation(2);
   tft_fillScreen(ILI9341_BLACK);
   banner();
 
@@ -1114,7 +1115,7 @@ tft_print((char*)FIRMWARE_VERSION);
 
 tft_setTextSize(1);
 tft_setCursor(30, 210);
-tft_print((char*)"GNU GENERAL PUBLIC LICENSE Version 3");
+tft_print((char*)"~ modified by Mathieu Virbel - 2018 ~");
 }
 
 
